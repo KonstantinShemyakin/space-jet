@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPACE-JET</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="container-fluid">
+    <header class="container-fluid text-center d-grid gap-2">
+        <div id="space"></div>
+        <div class ="container text-center col-7" id="title_text">
+            <h1>SPACE-JET</h1>
+        </div>
+        <hr>
+    </header>
+
+    <content class="container-fluid d-grid gap-2" id="main_app">
+        <div class="row">
+            <div class="container d-grid col-sm-6">
+                <canvas id="game_canvas">
+                    <div class="cnv_img">
+                        <img src="img/game_back.png">
+                    </div>
+                    <div class="cnv_img">
+                        <img src="img/jet.png">
+                    </div>
+                    <div class="cnv_img">
+                        <img src="img/spaceship1.png">
+                    </div>
+                    <div class="cnv_img">
+                        <img src="img/spaceship2.png">
+                    </div>
+                    <div class="cnv_img">
+                        <img src="img/spaceship3.png">
+                    </div>
+                    <div class="cnv_img">
+                        <img src="img/spaceship4.png">
+                    </div>
+                    <div class="cnv_img">
+                        <img src="img/spaceship5.png">
+                    </div>
+                    <div class="cnv_img">
+                        <img src="img/spaceship6.png">
+                    </div>
+                </canvas>
+            </div>
+        </div>
+        <div class="container d-grid gap-2 col-6">
+            <button id="start_game" type="button" class="btn btn-success" v-on:click="startGame">Start game</button>
+            <button id="continue_game" type="button" class="btn btn-secondary" v-on:click="unpauseGame" disabled>Continue</button>
+            <button id="pause_game" type="button" class="btn btn-secondary" v-on:click="pauseGame" disabled>Pause</button>
+        </div>
+    </content>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vuemodel.js"></script>
+</body>
+</html>

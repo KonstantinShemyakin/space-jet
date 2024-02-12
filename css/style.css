@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "PressStart";
+    src: url("../fonts/PressStart2P-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url("../img/site_back.jpg") no-repeat fixed;
+}
+
+hr {
+    border: 5px solid #808080;
+}
+
+header, content {
+    font-family: "PressStart", sans-serif;
+}
+
+content {
+    margin: 0px 0px 20px 0px;
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+    min-width: 100px;
+    min-height: 600px;
+    border: 15px inset #7128e8;
+}
+
+h1 {
+    padding: 20px 0px 0px 0px;
+}
+
+#title_text {
+    background-color: #2e248d;
+    border: 8px outset #7128e8;
+    border-radius: 4px 4px;
+    color: silver;
+}
+
+#space {
+    margin: 10px 0px 0px 0px;
+}
+
+.cnv_img {
+    display: none;
+}
+
